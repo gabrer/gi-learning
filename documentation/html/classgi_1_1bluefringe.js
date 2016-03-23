@@ -1,0 +1,28 @@
+var classgi_1_1bluefringe =
+[
+    [ "bluefringe", "classgi_1_1bluefringe.html#a0dbc16a57dcc43bea663035d1373de71", null ],
+    [ "~bluefringe", "classgi_1_1bluefringe.html#a1c9e8effb6df3df9ddb4767a7d6d7125", null ],
+    [ "build_apta", "classgi_1_1bluefringe.html#ac716ebbb33e455050739a6eee90aab93", null ],
+    [ "eliminaStati", "classgi_1_1bluefringe.html#a3d3b10cc8c702716bc542dd70728f91d", null ],
+    [ "fold", "classgi_1_1bluefringe.html#ae293392afd4530988522556110e57da3", null ],
+    [ "get_actual_merge", "classgi_1_1bluefringe.html#aec76e8bd69a16353621a9f18d2c771bd", null ],
+    [ "get_heuristic_merge", "classgi_1_1bluefringe.html#ad0d0a6a78136932cb35864d8f4dd71d6", null ],
+    [ "get_while_count", "classgi_1_1bluefringe.html#a2bf8390d62bf894fc9faf7daec5bc854", null ],
+    [ "merge", "classgi_1_1bluefringe.html#ab01cc26ef1f0ab90b652830d40046118", null ],
+    [ "merge_heuristic_score", "classgi_1_1bluefringe.html#ae880311ef7176107999bd58a7dc14cb4", null ],
+    [ "merge_heuristic_score", "classgi_1_1bluefringe.html#a849300b1e627330bf1aaac0541f07de8", null ],
+    [ "nuoviBlu", "classgi_1_1bluefringe.html#a6188d5ca1bbd35044846181094b8e462", null ],
+    [ "print_fringe_size", "classgi_1_1bluefringe.html#ace9d08fbb9815621c66523c304623e3f", null ],
+    [ "promote", "classgi_1_1bluefringe.html#a976d8fc1b2235397a8fe8469f6213a08", null ],
+    [ "read_samples", "classgi_1_1bluefringe.html#a82e69111bc1ca00b8a400ab72617b1aa", null ],
+    [ "run", "classgi_1_1bluefringe.html#a98870d239c6726a81fa9e489e7a21108", null ],
+    [ "set_fringe_size", "classgi_1_1bluefringe.html#a397c7281dc2fd24626f136982fb0383a", null ],
+    [ "dim_alphabet", "classgi_1_1bluefringe.html#ae4c9adb750cbf76d9fd8853be619b6ab", null ],
+    [ "fringe_size", "classgi_1_1bluefringe.html#a616b956c13d5fe6a42f65d9157aeb791", null ],
+    [ "inverse_mapped_alphabet", "classgi_1_1bluefringe.html#a457ce94c1340c2980856324715cd73ac", null ],
+    [ "mapped_alphabet", "classgi_1_1bluefringe.html#aed0d09a6f690e7843185943739b473e6", null ],
+    [ "num_actual_merge", "classgi_1_1bluefringe.html#a7d98e5695c72a63f7631e4c07e572bc1", null ],
+    [ "num_heuristic_merge_valued", "classgi_1_1bluefringe.html#abdc1dc05ea6c3f9e7035c839014d63fd", null ],
+    [ "path_samples", "classgi_1_1bluefringe.html#a50eae933085e769dbb1af4b908488c4d", null ],
+    [ "while_count", "classgi_1_1bluefringe.html#ac0eb72a25cb4683b6ebaddbf4d026dec", null ]
+];

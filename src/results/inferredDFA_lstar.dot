@@ -1,0 +1,27 @@
+digraph LSTAR {
+__start0 [style = invis, shape = none, label = "", width = 0, height = 0];
+
+rankdir=LR;
+size="8,5";
+
+s0 [style="filled", color="black", fillcolor="white" shape="circle", label="q0"];
+s1 [style="filled", color="black", fillcolor="white" shape="circle", label="q1"];
+s2 [style="rounded,filled", color="black", fillcolor="white" shape="doublecircle", label="q2"];
+s3 [style="filled", color="black", fillcolor="white" shape="circle", label="q3"];
+s4 [style="filled", color="black", fillcolor="white" shape="circle", label="q4"];
+subgraph cluster_main { 
+	graph [pad=".75", ranksep="0.15", nodesep="0.15"];
+	 style=invis; 
+	__start0 -> s0 [penwidth=2];
+}
+s0 -> s0 [label="b"];
+s0 -> s1 [label="a"];
+s1 -> s0 [label="a"];
+s1 -> s2 [label="b"];
+s2 -> s3 [label="a"];
+s2 -> s4 [label="b"];
+s3 -> s3 [label="a,b"];
+s4 -> s2 [label="b"];
+s4 -> s3 [label="a"];
+
+}

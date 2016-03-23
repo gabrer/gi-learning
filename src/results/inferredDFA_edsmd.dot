@@ -1,0 +1,14 @@
+digraph EDSM {
+__start0 [style = invis, shape = none, label = "", width = 0, height = 0];
+
+rankdir=LR;
+size="8,5";
+
+s0 [style="rounded,filled", color="black", fillcolor="white" shape="doublecircle", label="q0"];
+s1 [style="filled", color="black", fillcolor="white" shape="circle", label="q1"];
+
+s0 -> s0 [label="5"];
+s0 -> s1 [label="d"];
+s1 -> s0 [label="7"];
+
+}

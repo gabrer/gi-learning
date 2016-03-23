@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['db',['db',['../edsm_8cpp.html#a91fd53b963418a4ecba64ba69e6a2577',1,'db():&#160;edsm.cpp'],['../geoExp_8cpp.html#a91fd53b963418a4ecba64ba69e6a2577',1,'db():&#160;geoExp.cpp']]],
+  ['delta',['DELTA',['../blueStar_8cpp.html#a3fd2b1bcd7ddcf506237987ad780f495',1,'blueStar.cpp']]],
+  ['dfa',['dfa',['../classdfa.html',1,'dfa'],['../classgi_1_1dfa.html#ab9c133843399ee94d0d42d61ae805072',1,'gi::dfa::dfa()'],['../classgi_1_1dfa.html#a0d232fff2922edc3424e2cf07c535d69',1,'gi::dfa::dfa(const int n_state, const int dim_alf, const char *alf)'],['../classgi_1_1dfa.html#a749873628c6b0ef3492ab1dbe87468f9',1,'gi::dfa::dfa(const int n_state, const int dim_alf, const char *alf, const int s_state)'],['../classgi_1_1dfa.html#ae0081f508c602cef35d22b3bdd9dbde1',1,'gi::dfa::dfa(const int n_state, const int dim_alf, const char *alf, const int s_state, const int **tt_copy)'],['../classgi_1_1dfa.html#a735c83d2582fcb1c15807099013c893d',1,'gi::dfa::dfa(const dfa &amp;d1)']]],
+  ['dfa',['dfa',['../classgi_1_1dfa.html',1,'gi']]],
+  ['dfa_2ecpp',['dfa.cpp',['../dfa_8cpp.html',1,'']]],
+  ['dfa_2eh',['dfa.h',['../dfa_8h.html',1,'']]],
+  ['dfa_5fstate_5faccepting',['DFA_STATE_ACCEPTING',['../dfa_8h.html#aa48d137da7d9077844d6563772735a18',1,'dfa.h']]],
+  ['dfa_5fstate_5fnon_5faccepting',['DFA_STATE_NON_ACCEPTING',['../dfa_8h.html#a3cb863481f544d73375698f4b1a21b30',1,'dfa.h']]],
+  ['dfa_5fstate_5frejecting',['DFA_STATE_REJECTING',['../dfa_8h.html#aca427026422a71924b921835aabb9dc1',1,'dfa.h']]],
+  ['dfa_5fstate_5funreachable',['DFA_STATE_UNREACHABLE',['../dfa_8h.html#a82d3d053fe9e1077408caf1b79d24e1e',1,'dfa.h']]],
+  ['dfa_5ftf_5fstate_5fn',['DFA_TF_STATE_N',['../dfa_8cpp.html#afdf0062e7c3d4735ec8258e35c70b252',1,'dfa.cpp']]],
+  ['dfa_5ftf_5fstate_5fx',['DFA_TF_STATE_X',['../dfa_8cpp.html#ab6e656825255f3a1ec9d04571d4c9395',1,'dfa.cpp']]],
+  ['dfaedsm',['dfaEDSM',['../classdfaEDSM.html',1,'dfaEDSM'],['../classgi_1_1dfaEDSM.html#a687048ec0da1bea3d12ced1f8b4bad55',1,'gi::dfaEDSM::dfaEDSM()'],['../classgi_1_1dfaEDSM.html#a3d5489dc80cf7cfb5eada7c026d1c705',1,'gi::dfaEDSM::dfaEDSM(const dfa &amp;d1)'],['../classgi_1_1dfaEDSM.html#aa09d9ad2d6020f395b8323bde25cb734',1,'gi::dfaEDSM::dfaEDSM(const dfaEDSM &amp;d1)'],['../classgi_1_1dfaEDSM.html#a4b15e0b8c723dec0833ae4a824cbb884',1,'gi::dfaEDSM::dfaEDSM(const int n_state, const int dim_alf, const char *alf)'],['../classgi_1_1dfaEDSM.html#a9aaa8238dc5ddf60bc1bcab970756b27',1,'gi::dfaEDSM::dfaEDSM(const int n_state, const int dim_alf, const char *alf, const int s_state)']]],
+  ['dfaedsm',['dfaEDSM',['../classgi_1_1dfaEDSM.html',1,'gi']]],
+  ['dfaedsm_2ecpp',['dfaEDSM.cpp',['../dfaEDSM_8cpp.html',1,'']]],
+  ['dfaedsm_2eh',['dfaEDSM.h',['../dfaEDSM_8h.html',1,'']]],
+  ['dim_5falfabeto',['dim_alfabeto',['../classgi_1_1lstar.html#ab24af634781d7cfa1fe0a518f59ee122',1,'gi::lstar']]],
+  ['dim_5falphabet',['dim_alphabet',['../classgi_1_1bluefringe.html#ae4c9adb750cbf76d9fd8853be619b6ab',1,'gi::bluefringe::dim_alphabet()'],['../classgi_1_1dfa.html#a32e1aafdf5b78d8eb26df2316fbc5ca3',1,'gi::dfa::dim_alphabet()']]],
+  ['dot_5fdir',['DOT_DIR',['../geoExp_8cpp.html#a3ce3384cb551a94c0748c1cd94893194',1,'DOT_DIR():&#160;geoExp.cpp'],['../GI-learning_8cpp.html#a3ce3384cb551a94c0748c1cd94893194',1,'DOT_DIR():&#160;GI-learning.cpp']]],
+  ['dot_5ffile_5fbluestar',['DOT_FILE_BLUESTAR',['../geoExp_8cpp.html#a10f071487485792944dffde8d73da361',1,'DOT_FILE_BLUESTAR():&#160;geoExp.cpp'],['../GI-learning_8cpp.html#a10f071487485792944dffde8d73da361',1,'DOT_FILE_BLUESTAR():&#160;GI-learning.cpp']]],
+  ['dot_5ffile_5fedsm',['DOT_FILE_EDSM',['../geoExp_8cpp.html#a45d78f930a36f00db625b15ed80cf9d0',1,'DOT_FILE_EDSM():&#160;geoExp.cpp'],['../GI-learning_8cpp.html#a45d78f930a36f00db625b15ed80cf9d0',1,'DOT_FILE_EDSM():&#160;GI-learning.cpp']]],
+  ['dot_5ffile_5flstar',['DOT_FILE_LSTAR',['../geoExp_8cpp.html#af423920d2891aa87bb07f650ac93bf2e',1,'DOT_FILE_LSTAR():&#160;geoExp.cpp'],['../GI-learning_8cpp.html#af423920d2891aa87bb07f650ac93bf2e',1,'DOT_FILE_LSTAR():&#160;GI-learning.cpp']]]
+];

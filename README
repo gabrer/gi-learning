@@ -1,0 +1,15 @@
+Sample readme file for GI-learning project.
+
+Go inside the project folder "GI-learning"
+
+make distclean
+autoreconf -i
+./configure
+make
+cd src/
+./giLearning ../examples/examples_big.txt ../examples/lstar.txt
+
+If you obtain some error from the "configure" command, resolve it installing the necessary libraries or tools.
+
+
+http://mcuoneclipse.com/2012/06/25/5-best-eclipse-plugins-1-eclox-with-doxygen-graphviz-and-mscgen/

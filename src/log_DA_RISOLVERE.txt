@@ -1,0 +1,357 @@
+==12031== Memcheck, a memory error detector
+==12031== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==12031== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==12031== Command: ./giLearning ../examples/examples_big.txt ../examples/lstar.txt
+==12031== 
+--12031-- Valgrind options:
+--12031--    -v
+--12031--    --leak-check=full
+--12031--    --show-reachable=yes
+--12031--    --track-origins=yes
+--12031-- Contents of /proc/version:
+--12031--   Linux version 3.16.0-57-generic (buildd@lcy01-10) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #77~14.04.1-Ubuntu SMP Thu Dec 17 23:20:00 UTC 2015
+--12031-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-sse3
+--12031-- Page sizes: currently 4096, max supported 4096
+--12031-- Valgrind library directory: /usr/lib/valgrind
+--12031-- Reading syms from /home/gabriele/Dropbox/workspace_asus/GI-learning/src/giLearning
+--12031-- Reading syms from /lib/x86_64-linux-gnu/ld-2.19.so
+--12031--   Considering /lib/x86_64-linux-gnu/ld-2.19.so ..
+--12031--   .. CRC mismatch (computed 4cbae35e wanted 8d683c31)
+--12031--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.19.so ..
+--12031--   .. CRC is valid
+--12031-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--12031--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--12031--   .. CRC mismatch (computed 4f1eed43 wanted a323a3ab)
+--12031--    object doesn't have a symbol table
+--12031--    object doesn't have a dynamic symbol table
+--12031-- Scheduler: using generic scheduler lock implementation.
+--12031-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==12031== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-12031-by-gabriele-on-???
+==12031== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-12031-by-gabriele-on-???
+==12031== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-12031-by-gabriele-on-???
+==12031== 
+==12031== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==12031== don't want to do, unless you know exactly what you're doing,
+==12031== or are doing some strange experiment):
+==12031==   /usr/lib/valgrind/../../bin/vgdb --pid=12031 ...command...
+==12031== 
+==12031== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==12031==   /path/to/gdb ./giLearning
+==12031== and then give GDB the following command
+==12031==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=12031
+==12031== --pid is optional if only one valgrind process is running
+==12031== 
+--12031-- REDIR: 0x4019ca0 (ld-linux-x86-64.so.2:strlen) redirected to 0x380764b1 (???)
+--12031-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--12031--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--12031--   .. CRC mismatch (computed fc68135e wanted 45f5e986)
+--12031--    object doesn't have a symbol table
+--12031-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--12031--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--12031--   .. CRC mismatch (computed ae683f7e wanted 08c06df2)
+--12031--    object doesn't have a symbol table
+==12031== WARNING: new redirection conflicts with existing -- ignoring it
+--12031--     old: 0x04019ca0 (strlen              ) R-> (0000.0) 0x380764b1 ???
+--12031--     new: 0x04019ca0 (strlen              ) R-> (2007.0) 0x04c2e1a0 strlen
+--12031-- REDIR: 0x4019a50 (ld-linux-x86-64.so.2:index) redirected to 0x4c2dd50 (index)
+--12031-- REDIR: 0x4019c70 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c2f2f0 (strcmp)
+--12031-- REDIR: 0x401a9c0 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c31da0 (mempcpy)
+--12031-- Reading syms from /usr/lib/x86_64-linux-gnu/libboost_system.so.1.54.0
+--12031--    object doesn't have a symbol table
+--12031-- Reading syms from /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.54.0
+--12031--    object doesn't have a symbol table
+--12031-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19
+--12031--   Considering /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19 ..
+--12031--   .. CRC mismatch (computed 0df13638 wanted 88e81a42)
+--12031--    object doesn't have a symbol table
+--12031-- Reading syms from /lib/x86_64-linux-gnu/libm-2.19.so
+--12031--   Considering /lib/x86_64-linux-gnu/libm-2.19.so ..
+--12031--   .. CRC mismatch (computed a46ef660 wanted 767bfa33)
+--12031--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.19.so ..
+--12031--   .. CRC is valid
+--12031-- Reading syms from /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0
+--12031--   Considering /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0 ..
+--12031--   .. CRC mismatch (computed 1465777d wanted dcea5024)
+--12031--    object doesn't have a symbol table
+--12031-- Reading syms from /lib/x86_64-linux-gnu/libgcc_s.so.1
+--12031--   Considering /lib/x86_64-linux-gnu/libgcc_s.so.1 ..
+--12031--   .. CRC mismatch (computed ea519b66 wanted 0c00ddb3)
+--12031--    object doesn't have a symbol table
+--12031-- Reading syms from /lib/x86_64-linux-gnu/libc-2.19.so
+--12031--   Considering /lib/x86_64-linux-gnu/libc-2.19.so ..
+--12031--   .. CRC mismatch (computed dc620abc wanted 148cbd6e)
+--12031--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.19.so ..
+--12031--   .. CRC is valid
+--12031-- Reading syms from /lib/x86_64-linux-gnu/libpthread-2.19.so
+--12031--   Considering /lib/x86_64-linux-gnu/libpthread-2.19.so ..
+--12031--   .. CRC mismatch (computed d568bf33 wanted fb00d679)
+--12031--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libpthread-2.19.so ..
+--12031--   .. CRC is valid
+--12031-- REDIR: 0x5d0cd60 (libc.so.6:strcasecmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--12031-- REDIR: 0x5d0f050 (libc.so.6:strncasecmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--12031-- REDIR: 0x5d0c530 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--12031-- REDIR: 0x5d0a7c0 (libc.so.6:rindex) redirected to 0x4c2da30 (rindex)
+--12031-- REDIR: 0x5d08ac0 (libc.so.6:strlen) redirected to 0x4c2e0e0 (strlen)
+--12031-- REDIR: 0x5d0c5c0 (libc.so.6:memset) redirected to 0x4c31350 (memset)
+--12031-- REDIR: 0x52afd90 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x4c2b070 (operator new(unsigned long))
+--12031-- REDIR: 0x5d11730 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--12031-- REDIR: 0x5d17fd0 (libc.so.6:__memcpy_sse2_unaligned) redirected to 0x4c2f6b0 (memcpy@@GLIBC_2.14)
+--12031-- REDIR: 0x5d0bfa0 (libc.so.6:__GI_memcmp) redirected to 0x4c30b80 (__GI_memcmp)
+--12031-- REDIR: 0x5d07070 (libc.so.6:strcmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--12031-- REDIR: 0x5d17d20 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c2f1b0 (strcmp)
+--12031-- REDIR: 0x52afea0 (libstdc++.so.6:operator new[](unsigned long)) redirected to 0x4c2b790 (operator new[](unsigned long))
+--12031-- REDIR: 0x5d08f30 (libc.so.6:__GI_strncmp) redirected to 0x4c2e930 (__GI_strncmp)
+--12031-- REDIR: 0x5d0bf60 (libc.so.6:bcmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--12031-- REDIR: 0x5de0060 (libc.so.6:__memcmp_sse4_1) redirected to 0x4c30c00 (__memcmp_sse4_1)
+--12031-- REDIR: 0x52ae0f0 (libstdc++.so.6:operator delete(void*)) redirected to 0x4c2c250 (operator delete(void*))
+--12031-- REDIR: 0x5d06e50 (libc.so.6:__GI_strchr) redirected to 0x4c2db90 (__GI_strchr)
+--12031-- REDIR: 0x5d11780 (libc.so.6:__GI_memcpy) redirected to 0x4c2fc90 (__GI_memcpy)
+--12031-- REDIR: 0x5d070b0 (libc.so.6:__GI_strcmp) redirected to 0x4c2f200 (__GI_strcmp)
+--12031-- REDIR: 0x5d0bc10 (libc.so.6:memchr) redirected to 0x4c2f390 (memchr)
+--12031-- REDIR: 0x5d13ac0 (libc.so.6:strchrnul) redirected to 0x4c319b0 (strchrnul)
+--12031-- REDIR: 0x5d02750 (libc.so.6:malloc) redirected to 0x4c2ab10 (malloc)
+--12031-- REDIR: 0x5d02df0 (libc.so.6:free) redirected to 0x4c2bd80 (free)
+--12031-- REDIR: 0x5d0cbf0 (libc.so.6:__GI_stpcpy) redirected to 0x4c30da0 (__GI_stpcpy)
+--12031-- REDIR: 0x5d06e20 (libc.so.6:index) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--12031-- REDIR: 0x5d03220 (libc.so.6:calloc) redirected to 0x4c2cbf0 (calloc)
+--12031-- REDIR: 0x5d22dc0 (libc.so.6:wcslen) redirected to 0x4c32370 (wcslen)
+--12031-- REDIR: 0x5d08c80 (libc.so.6:strnlen) redirected to 0x4c2e080 (strnlen)
+--12031-- REDIR: 0x52ae120 (libstdc++.so.6:operator delete[](void*)) redirected to 0x4c2c7d0 (operator delete[](void*))
+
+--12031-- REDIR: 0x5d22030 (libc.so.6:wcscmp) redirected to 0x4c32390 (wcscmp)
+==12031== 
+==12031== HEAP SUMMARY:
+==12031==     in use at exit: 197,716 bytes in 9,768 blocks
+==12031==   total heap usage: 140,983,889 allocs, 140,974,121 frees, 3,969,044,107 bytes allocated
+==12031== 
+==12031== Searching for pointers to 9,768 not-freed blocks
+==12031== Checked 8,615,336 bytes
+==12031== 
+==12031== 2 bytes in 1 blocks are indirectly lost in loss record 1 of 23
+==12031==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x412521: gi::dfa::set_alphabet(char const*, int) (dfa.cpp:813)
+==12031==    by 0x40E7DF: gi::dfa::dfa(int, int, char const*, int) (dfa.cpp:57)
+==12031==    by 0x40E875: gi::dfa::dfa(int, int, char const*, int, int const**) (dfa.cpp:64)
+==12031==    by 0x418616: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:38)
+==12031==    by 0x40CAF4: gi::blueStar::run(std::string) [clone ._omp_fn.0] (blueStar.cpp:238)
+==12031==    by 0x40BE04: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 2 bytes in 1 blocks are indirectly lost in loss record 2 of 23
+==12031==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x412521: gi::dfa::set_alphabet(char const*, int) (dfa.cpp:813)
+==12031==    by 0x40E7DF: gi::dfa::dfa(int, int, char const*, int) (dfa.cpp:57)
+==12031==    by 0x40E875: gi::dfa::dfa(int, int, char const*, int, int const**) (dfa.cpp:64)
+==12031==    by 0x418616: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:38)
+==12031==    by 0x4217A1: gi::edsm::run(std::string) [clone ._omp_fn.0] (edsm.cpp:204)
+==12031==    by 0x420C94: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031==    by 0x421FB6: main (GI-learning.cpp:163)
+==12031== 
+==12031== 4 bytes in 1 blocks are indirectly lost in loss record 3 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x409741: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==12031==    by 0x407D6A: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/gabriele/Dropbox/workspace_asus/GI-learning/src/giLearning)
+==12031==    by 0x41D4B5: int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >(unsigned long, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >) (stl_vector.h:1138)
+==12031==    by 0x41C807: std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) (vector.tcc:188)
+==12031==    by 0x4192B2: gi::dfaEDSM::copy_blue_states(std::vector<int, std::allocator<int> >*) (dfaEDSM.cpp:258)
+==12031==    by 0x41866E: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:43)
+==12031==    by 0x40CAF4: gi::blueStar::run(std::string) [clone ._omp_fn.0] (blueStar.cpp:238)
+==12031==    by 0x40BE04: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 4 bytes in 1 blocks are indirectly lost in loss record 4 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x409741: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==12031==    by 0x407D6A: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/gabriele/Dropbox/workspace_asus/GI-learning/src/giLearning)
+==12031==    by 0x41D4B5: int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >(unsigned long, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >) (stl_vector.h:1138)
+==12031==    by 0x41C807: std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) (vector.tcc:188)
+==12031==    by 0x4192B2: gi::dfaEDSM::copy_blue_states(std::vector<int, std::allocator<int> >*) (dfaEDSM.cpp:258)
+==12031==    by 0x41866E: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:43)
+==12031==    by 0x4217A1: gi::edsm::run(std::string) [clone ._omp_fn.0] (edsm.cpp:204)
+==12031==    by 0x420C94: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031==    by 0x421FB6: main (GI-learning.cpp:163)
+==12031== 
+==12031== 24 bytes in 1 blocks are still reachable in loss record 5 of 23
+==12031==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x4C2CF1F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x585F7F8: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+==12031==    by 0x58639FA: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+==12031==    by 0x40BDF8: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 24 bytes in 1 blocks are indirectly lost in loss record 6 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x418620: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:40)
+==12031==    by 0x40CAF4: gi::blueStar::run(std::string) [clone ._omp_fn.0] (blueStar.cpp:238)
+==12031==    by 0x40BE04: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 24 bytes in 1 blocks are indirectly lost in loss record 7 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x41863D: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:41)
+==12031==    by 0x40CAF4: gi::blueStar::run(std::string) [clone ._omp_fn.0] (blueStar.cpp:238)
+==12031==    by 0x40BE04: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 24 bytes in 1 blocks are indirectly lost in loss record 8 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x418620: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:40)
+==12031==    by 0x4217A1: gi::edsm::run(std::string) [clone ._omp_fn.0] (edsm.cpp:204)
+==12031==    by 0x420C94: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031==    by 0x421FB6: main (GI-learning.cpp:163)
+==12031== 
+==12031== 24 bytes in 1 blocks are indirectly lost in loss record 9 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x41863D: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:41)
+==12031==    by 0x4217A1: gi::edsm::run(std::string) [clone ._omp_fn.0] (edsm.cpp:204)
+==12031==    by 0x420C94: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031==    by 0x421FB6: main (GI-learning.cpp:163)
+==12031== 
+==12031== 40 bytes in 1 blocks are indirectly lost in loss record 10 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x417C61: __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<char const, unsigned short> > >::allocate(unsigned long, void const*) (new_allocator.h:104)
+==12031==    by 0x417595: std::_Rb_tree<char, std::pair<char const, unsigned short>, std::_Select1st<std::pair<char const, unsigned short> >, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::_M_get_node() (stl_tree.h:370)
+==12031==    by 0x4169CA: std::_Rb_tree_node<std::pair<char const, unsigned short> >* std::_Rb_tree<char, std::pair<char const, unsigned short>, std::_Select1st<std::pair<char const, unsigned short> >, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::_M_create_node<std::piecewise_construct_t const&, std::tuple<char&&>, std::tuple<> >(std::piecewise_construct_t const&, std::tuple<char&&>&&, std::tuple<>&&) (stl_tree.h:403)
+==12031==    by 0x415CAF: std::_Rb_tree_iterator<std::pair<char const, unsigned short> > std::_Rb_tree<char, std::pair<char const, unsigned short>, std::_Select1st<std::pair<char const, unsigned short> >, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<char&&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<char const, unsigned short> >, std::piecewise_construct_t const&, std::tuple<char&&>&&, std::tuple<>&&) (stl_tree.h:1669)
+==12031==    by 0x414D78: std::map<char, unsigned short, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::operator[](char&&) (stl_map.h:484)
+==12031==    by 0x412578: gi::dfa::set_alphabet(char const*, int) (dfa.cpp:819)
+==12031==    by 0x40E7DF: gi::dfa::dfa(int, int, char const*, int) (dfa.cpp:57)
+==12031==    by 0x40E875: gi::dfa::dfa(int, int, char const*, int, int const**) (dfa.cpp:64)
+==12031==    by 0x418616: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:38)
+==12031==    by 0x4217A1: gi::edsm::run(std::string) [clone ._omp_fn.0] (edsm.cpp:204)
+==12031==    by 0x420C94: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031== 
+==12031== 60 bytes in 1 blocks are indirectly lost in loss record 11 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x409741: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==12031==    by 0x407D6A: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/gabriele/Dropbox/workspace_asus/GI-learning/src/giLearning)
+==12031==    by 0x41D4B5: int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >(unsigned long, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >) (stl_vector.h:1138)
+==12031==    by 0x41C807: std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) (vector.tcc:188)
+==12031==    by 0x4192F3: gi::dfaEDSM::copy_red_states(std::vector<int, std::allocator<int> >*) (dfaEDSM.cpp:268)
+==12031==    by 0x41868C: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:45)
+==12031==    by 0x40CAF4: gi::blueStar::run(std::string) [clone ._omp_fn.0] (blueStar.cpp:238)
+==12031==    by 0x40BE04: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 80 bytes in 2 blocks are indirectly lost in loss record 12 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x417C61: __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<char const, unsigned short> > >::allocate(unsigned long, void const*) (new_allocator.h:104)
+==12031==    by 0x417595: std::_Rb_tree<char, std::pair<char const, unsigned short>, std::_Select1st<std::pair<char const, unsigned short> >, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::_M_get_node() (stl_tree.h:370)
+==12031==    by 0x4169CA: std::_Rb_tree_node<std::pair<char const, unsigned short> >* std::_Rb_tree<char, std::pair<char const, unsigned short>, std::_Select1st<std::pair<char const, unsigned short> >, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::_M_create_node<std::piecewise_construct_t const&, std::tuple<char&&>, std::tuple<> >(std::piecewise_construct_t const&, std::tuple<char&&>&&, std::tuple<>&&) (stl_tree.h:403)
+==12031==    by 0x415CAF: std::_Rb_tree_iterator<std::pair<char const, unsigned short> > std::_Rb_tree<char, std::pair<char const, unsigned short>, std::_Select1st<std::pair<char const, unsigned short> >, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<char&&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<char const, unsigned short> >, std::piecewise_construct_t const&, std::tuple<char&&>&&, std::tuple<>&&) (stl_tree.h:1669)
+==12031==    by 0x414D78: std::map<char, unsigned short, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::operator[](char&&) (stl_map.h:484)
+==12031==    by 0x412578: gi::dfa::set_alphabet(char const*, int) (dfa.cpp:819)
+==12031==    by 0x40E7DF: gi::dfa::dfa(int, int, char const*, int) (dfa.cpp:57)
+==12031==    by 0x40E875: gi::dfa::dfa(int, int, char const*, int, int const**) (dfa.cpp:64)
+==12031==    by 0x418616: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:38)
+==12031==    by 0x40CAF4: gi::blueStar::run(std::string) [clone ._omp_fn.0] (blueStar.cpp:238)
+==12031==    by 0x40BE04: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031== 
+==12031== 96 bytes in 1 blocks are indirectly lost in loss record 13 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x42178B: gi::edsm::run(std::string) [clone ._omp_fn.0] (edsm.cpp:204)
+==12031==    by 0x420C94: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031==    by 0x421FB6: main (GI-learning.cpp:163)
+==12031== 
+==12031== 188 bytes in 1 blocks are indirectly lost in loss record 14 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x409741: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==12031==    by 0x407D6A: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /home/gabriele/Dropbox/workspace_asus/GI-learning/src/giLearning)
+==12031==    by 0x41D4B5: int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >(unsigned long, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >) (stl_vector.h:1138)
+==12031==    by 0x41C807: std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) (vector.tcc:188)
+==12031==    by 0x4192F3: gi::dfaEDSM::copy_red_states(std::vector<int, std::allocator<int> >*) (dfaEDSM.cpp:268)
+==12031==    by 0x41868C: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:45)
+==12031==    by 0x4217A1: gi::edsm::run(std::string) [clone ._omp_fn.0] (edsm.cpp:204)
+==12031==    by 0x420C94: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031==    by 0x421FB6: main (GI-learning.cpp:163)
+==12031== 
+==12031== 192 bytes in 1 blocks are still reachable in loss record 15 of 23
+==12031==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x585F7A8: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+==12031==    by 0x5863B8E: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+==12031==    by 0x40BDF8: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 304 bytes in 1 blocks are possibly lost in loss record 16 of 23
+==12031==    at 0x4C2CC70: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x4012E54: allocate_dtv (dl-tls.c:296)
+==12031==    by 0x4012E54: _dl_allocate_tls (dl-tls.c:460)
+==12031==    by 0x604DDA0: allocate_stack (allocatestack.c:589)
+==12031==    by 0x604DDA0: pthread_create@@GLIBC_2.2.5 (pthread_create.c:500)
+==12031==    by 0x5863905: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+==12031==    by 0x40BDF8: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 1,568 bytes in 1 blocks are still reachable in loss record 17 of 23
+==12031==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x585F7A8: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+==12031==    by 0x58634D5: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+==12031==    by 0x586247B: GOMP_parallel_start (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+==12031==    by 0x420C88: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031==    by 0x421FB6: main (GI-learning.cpp:163)
+==12031== 
+==12031== 38,984 bytes in 1 blocks are indirectly lost in loss record 18 of 23
+==12031==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x40E6B5: gi::dfa::dfa(int, int, char const*, int) (dfa.cpp:41)
+==12031==    by 0x40E875: gi::dfa::dfa(int, int, char const*, int, int const**) (dfa.cpp:64)
+==12031==    by 0x418616: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:38)
+==12031==    by 0x40CAF4: gi::blueStar::run(std::string) [clone ._omp_fn.0] (blueStar.cpp:238)
+==12031==    by 0x40BE04: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 38,984 bytes in 1 blocks are indirectly lost in loss record 19 of 23
+==12031==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x40E6B5: gi::dfa::dfa(int, int, char const*, int) (dfa.cpp:41)
+==12031==    by 0x40E875: gi::dfa::dfa(int, int, char const*, int, int const**) (dfa.cpp:64)
+==12031==    by 0x418616: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:38)
+==12031==    by 0x4217A1: gi::edsm::run(std::string) [clone ._omp_fn.0] (edsm.cpp:204)
+==12031==    by 0x420C94: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031==    by 0x421FB6: main (GI-learning.cpp:163)
+==12031== 
+==12031== 58,476 bytes in 4,873 blocks are indirectly lost in loss record 20 of 23
+==12031==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x40E70A: gi::dfa::dfa(int, int, char const*, int) (dfa.cpp:43)
+==12031==    by 0x40E875: gi::dfa::dfa(int, int, char const*, int, int const**) (dfa.cpp:64)
+==12031==    by 0x418616: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:38)
+==12031==    by 0x40CAF4: gi::blueStar::run(std::string) [clone ._omp_fn.0] (blueStar.cpp:238)
+==12031==    by 0x40BE04: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 58,476 bytes in 4,873 blocks are indirectly lost in loss record 21 of 23
+==12031==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x40E70A: gi::dfa::dfa(int, int, char const*, int) (dfa.cpp:43)
+==12031==    by 0x40E875: gi::dfa::dfa(int, int, char const*, int, int const**) (dfa.cpp:64)
+==12031==    by 0x418616: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:38)
+==12031==    by 0x4217A1: gi::edsm::run(std::string) [clone ._omp_fn.0] (edsm.cpp:204)
+==12031==    by 0x420C94: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031==    by 0x421FB6: main (GI-learning.cpp:163)
+==12031== 
+==12031== 97,750 (96 direct, 97,654 indirect) bytes in 1 blocks are definitely lost in loss record 22 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x40CADE: gi::blueStar::run(std::string) [clone ._omp_fn.0] (blueStar.cpp:238)
+==12031==    by 0x40BE04: gi::blueStar::run(std::string) (blueStar.cpp:234)
+==12031==    by 0x421C02: main (GI-learning.cpp:119)
+==12031== 
+==12031== 97,878 (40 direct, 97,838 indirect) bytes in 1 blocks are definitely lost in loss record 23 of 23
+==12031==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12031==    by 0x417C61: __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<char const, unsigned short> > >::allocate(unsigned long, void const*) (new_allocator.h:104)
+==12031==    by 0x417595: std::_Rb_tree<char, std::pair<char const, unsigned short>, std::_Select1st<std::pair<char const, unsigned short> >, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::_M_get_node() (stl_tree.h:370)
+==12031==    by 0x4169CA: std::_Rb_tree_node<std::pair<char const, unsigned short> >* std::_Rb_tree<char, std::pair<char const, unsigned short>, std::_Select1st<std::pair<char const, unsigned short> >, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::_M_create_node<std::piecewise_construct_t const&, std::tuple<char&&>, std::tuple<> >(std::piecewise_construct_t const&, std::tuple<char&&>&&, std::tuple<>&&) (stl_tree.h:403)
+==12031==    by 0x415CAF: std::_Rb_tree_iterator<std::pair<char const, unsigned short> > std::_Rb_tree<char, std::pair<char const, unsigned short>, std::_Select1st<std::pair<char const, unsigned short> >, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<char&&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<char const, unsigned short> >, std::piecewise_construct_t const&, std::tuple<char&&>&&, std::tuple<>&&) (stl_tree.h:1669)
+==12031==    by 0x414D78: std::map<char, unsigned short, std::less<char>, std::allocator<std::pair<char const, unsigned short> > >::operator[](char&&) (stl_map.h:484)
+==12031==    by 0x412578: gi::dfa::set_alphabet(char const*, int) (dfa.cpp:819)
+==12031==    by 0x40E7DF: gi::dfa::dfa(int, int, char const*, int) (dfa.cpp:57)
+==12031==    by 0x40E875: gi::dfa::dfa(int, int, char const*, int, int const**) (dfa.cpp:64)
+==12031==    by 0x418616: gi::dfaEDSM::dfaEDSM(gi::dfaEDSM const&) (dfaEDSM.cpp:38)
+==12031==    by 0x4217A1: gi::edsm::run(std::string) [clone ._omp_fn.0] (edsm.cpp:204)
+==12031==    by 0x420C94: gi::edsm::run(std::string) (edsm.cpp:200)
+==12031== 
+==12031== LEAK SUMMARY:
+==12031==    definitely lost: 136 bytes in 2 blocks
+==12031==    indirectly lost: 195,492 bytes in 9,762 blocks
+==12031==      possibly lost: 304 bytes in 1 blocks
+==12031==    still reachable: 1,784 bytes in 3 blocks
+==12031==         suppressed: 0 bytes in 0 blocks
+==12031== 
+==12031== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==12031== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
