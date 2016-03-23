@@ -1,11 +1,11 @@
-GI-Learning library: a C++ framwork for grammatical inference.
+GI-LEARNING LIBRARY: a C++ framwork for grammatical inference.
 
-Grammar Induction algorithm:
+Grammar Induction algorithms:
 - EDSM
 - Blue*
 - L*
 
-Easy instruction:
+Easy instructions:
 1. Go inside the project folder "GI-learning"
 
 2. 
@@ -16,7 +16,3 @@ Easy instruction:
   cd src/
   ./giLearning ../examples/examples_big.txt ../examples/lstar.txt
 If you obtain some error from the "configure" command, resolve it installing the necessary libraries or tools.
-
-
-If needed, download:
-  http://mcuoneclipse.com/2012/06/25/5-best-eclipse-plugins-1-eclox-with-doxygen-graphviz-and-mscgen/
