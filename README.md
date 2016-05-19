@@ -2,7 +2,7 @@
 
 `GI-LEARNING LIBRARY` is a C++ framework for [grammatical inference](https://en.wikipedia.org/wiki/Grammar_induction).
 
-Grammar Induction algorithms:
+Grammar induction algorithms:
 - RPNI
 - EDSM
 - Blue*
