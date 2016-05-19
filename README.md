@@ -1,4 +1,6 @@
-# GI-LEARNING LIBRARY: a C++ framwork for grammatical inference.
+# GI-LEARNING LIBRARY
+
+`GI-LEARNING LIBRARY` is a C++ framework for [grammatical inference](https://en.wikipedia.org/wiki/Grammar_induction).
 
 Grammar Induction algorithms:
 - RPNI
@@ -16,4 +18,5 @@ Easy instructions:
   make
   cd src/
   ./giLearning ../examples/examples_big.txt ../examples/lstar.txt
+
 If you obtain some error from the "configure" command, resolve it installing the necessary libraries or tools.
