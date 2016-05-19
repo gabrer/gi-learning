@@ -17,6 +17,6 @@ Easy instructions:
   ./configure
   make
   cd src/
-  ./giLearning ../examples/examples_big.txt ../examples/lstar.txt
-```
+  ./giLearning ../examples/examples_big.txt ../examples/lstar.txt ```
+
 If you obtain some error from the "configure" command, resolve it installing the necessary libraries or tools.
