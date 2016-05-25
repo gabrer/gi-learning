@@ -20,4 +20,4 @@ Easy configuration instructions:
    ./giLearning ../examples/examples_big.txt ../examples/lstar.txt
 ```
 
-If you obtain some error from the "configure" command, resolve it installing the necessary libraries or tools.
+If you obtain some error from the "configure" command, you must resolve it installing the necessary libraries or tools.
